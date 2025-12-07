@@ -1,4 +1,4 @@
-import random
+import random #random sayıları bilgisayara seçtirelim
 print("Taş , Kağıt , Makas OYUNUNA HOŞGELDİNİZ ")
 oyuncuSkor=0
 bilgisayarskor=0
@@ -11,7 +11,7 @@ makas="makas 3 "
 
 
 
-for tur in range(turSayisi):
+for tur in range(turSayisi): #döngü ile tur sayısı yapalım
     print(f"\nTur {tur+1}")
     print("Lütfen Seçiminizi yapın :")
     print(tas)
@@ -19,7 +19,7 @@ for tur in range(turSayisi):
     print(makas)
 
     oyuncuSecimi = input("Değer giriniz :")
-    bilgisayar = random.choice(["1", "2", "3"])
+    bilgisayar = random.choice(["1", "2", "3"])#bilgisayarın 3 seçenekten random seçmesini random metodu ile seçtirelim
 
     match oyuncuSecimi:
         case "1":
@@ -81,4 +81,5 @@ for tur in range(turSayisi):
         print("Oyuncu kazandı")
     elif oyuncuSkor < bilgisayarskor:
         print("bilgisayar Skoru:", bilgisayarskor, "oyuncu Skor :", oyuncuSkor)
+
         print("Bilgisayar Kazandı")
